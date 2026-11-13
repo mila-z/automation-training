@@ -1,0 +1,41 @@
+structure: CSS selector, Role, Name 
+
+in each step the following buttons are visible:
+[data-testid="cs-new-request-wizard-cancel"], button, Cancel
+[data-testid="cs-new-request-wizard-back"], button, Back
+[data-testid="cs-new-request-wizard-next"], button, Next
+
+Step 1:
+[data-testid="cs-new-request-step-1"] input, textbox, Request Title
+[data-testid="cs-new-request-description"] textarea[name="description"], textbox, Description
+[data-testid="cs-new-request-date"] input, - , Date of Request
+[data-testid="cs-new-request-category"] [role="combobox"], combobox, Category
+[data-testid="cs-new-request-priority"] input[value="LOW"], radiogroup, Low
+[data-testid="cs-new-request-priority"] input[value="MEDIUM"], radiogroup, Medium
+[data-testid="cs-new-request-priority"] input[value="HIGH"], radiogroup, High
+[data-testid="cs-new-request-priority"] input[value="URGENT"], radiogroup, Urgent
+[data-testid="cs-new-request-emergency"] input, checkbox, Is this an emergency?
+
+Step 2:
+[data-testid="cs-new-request-street-address"] input, textbox, Street Address
+[data-testid="cs-new-request-city"] input, textbox, City
+[data-testid="cs-new-request-postal-code"] input, textbox, Postal Code
+[data-testid="cs-new-request-latitude"] input, textbox, GPS Coordinates
+[data-testid="cs-new-request-longitude"] input, textbox, Longitude
+[data-testid="cs-new-request-location-text"] input, textbox, Location Description
+
+Step 3:
+[data-testid="cs-new-request-contact-method"] [role="combobox"], combobox, Preferred Contact Method
+[data-testid="cs-new-request-email"] input, textbox, Email
+[data-testid="cs-new-request-phone"] input, textbox, Phone
+[data-testid="cs-new-request-mail-address"] input, textbox, Street Address
+[data-testid="cs-new-request-mail-city"] input, textbox, City
+[data-testid="cs-new-request-mail-postal"] input, textbox, Postal Code
+[data-testid="cs-new-request-affected-services"] [role="combobox"], combobox, Affected Services (Optional)
+
+Step4:
+[data-testid="cs-new-request-step-4"] input, button, Drag and drop files here or click to browse
+[data-testid="cs-new-request-agree-terms"] input[type="checkbox"], checkbox, I agree to the terms and conditions
+
+Step 5:
+[data-testid="cs-new-request-wizard-submit"], button, Submit Request
