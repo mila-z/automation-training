@@ -1,0 +1,7 @@
+[data-testid=cs-app-header] [data-testid=cs-nav-dashboard]
+[data-testid=cs-app-header] [data-testid=cs-nav-resolved-cases]
+[data-testid=cs-app-header] [data-testid=cs-nav-ranklist]
+[data-testid=cs-app-header] [data-testid=cs-nav-my-requests]
+[data-testid=cs-app-header] [data-testid=cs-nav-new-request]
+[data-testid=cs-app-header] [data-testid=cs-language-switcher]
+[data-testid=cs-app-header] [data-testid=cs-user-menu-button]
