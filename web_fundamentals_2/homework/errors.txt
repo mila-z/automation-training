@@ -1,0 +1,4 @@
+error that generates a 401 code: 
+try to login with a username "test@email.com" and password "nosuchpassword"
+
+error that generates 5xx:
