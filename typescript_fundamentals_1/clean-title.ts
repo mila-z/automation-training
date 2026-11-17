@@ -5,3 +5,6 @@ const category: string = "Lighting";
 
 const label = `REQ-${request_num} [P${priority_level}] ${title} (${category})`;
 console.log(label);
+
+const label_len: number = label.length;
+console.log(label_len);
