@@ -1,0 +1,4 @@
+1. when filling the form the requests are only for images 
+2. when finally submitting the request on step 5:
+api request: http://localhost:3001/api/v1/requests?page=1&size=10&sort=id%3Adesc
+status code: 200 OK
