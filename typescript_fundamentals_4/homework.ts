@@ -34,3 +34,9 @@ type ContactInformation = {
     mailingAddress?: MailingAddress;
     affectedServices?: AffetctedServices;
 };
+
+type AdditionalDetails = {
+    filePath: string;
+    termsAndConditions: boolean;
+};
+
