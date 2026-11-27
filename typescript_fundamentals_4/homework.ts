@@ -2,6 +2,8 @@ type Category = "Roads & Infrastructure" | "Waste Management" | "Water & Utiliti
 
 type Priority = "Low" | "Medium" | "High" | "Urgent";
 
+type GPSCoordinates = {latitude: number; longtitude: number;};
+
 type BasicInformation = {
     requestTitle: string;
     desription: string;
@@ -9,4 +11,12 @@ type BasicInformation = {
     category: Category;
     priority: Priority;
     emergency: boolean;
+};
+
+type LocationDetails = {
+    streetAdress: string;
+    city: string;
+    postalCode: string;
+    coordinates: GPSCoordinates;
+    locationDescription: string;
 };
