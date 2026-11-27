@@ -40,3 +40,10 @@ type AdditionalDetails = {
     termsAndConditions: boolean;
 };
 
+type NewRequest = {
+    basicInformation: BasicInformation;
+    locationDetails: LocationDetails;
+    contactInformation: ContactInformation;
+    additionalDetails: AdditionalDetails;
+}
+
