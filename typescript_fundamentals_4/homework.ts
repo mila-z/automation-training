@@ -4,6 +4,12 @@ type Priority = "Low" | "Medium" | "High" | "Urgent";
 
 type GPSCoordinates = {latitude: number; longtitude: number;};
 
+type ContactMethod = "Email" | "Phone" | "SMS" | "Mail";
+
+type MailingAddress = {streetAddress: string; city: string};
+
+type AffetctedServices = "Water Supply" | "Electrical" | "Gas" | "Internet/Cable" | "Garbage Collection";
+
 type BasicInformation = {
     requestTitle: string;
     desription: string;
@@ -19,4 +25,12 @@ type LocationDetails = {
     postalCode: string;
     coordinates: GPSCoordinates;
     locationDescription: string;
+};
+
+type ContactInformation = {
+    contactMethod: ContactMethod;
+    email: string;
+    phone: string;
+    mailingAddress?: MailingAddress;
+    affectedServices?: AffetctedServices;
 };
