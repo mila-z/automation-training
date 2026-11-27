@@ -209,3 +209,39 @@ const invalidRequest3: NewRequest = {
         termsAndConditions: true
     }
 };
+
+class TestDataFactory {
+    validRequest(overrides?: Partial<NewRequest>): NewRequest {
+        const defaults: NewRequest = {
+            basicInformation: {
+                requestTitle: "Broken street light",
+                desription: "The street light is not working.",
+                requestDate: "27.11.2026",
+                category: "Roads & Infrastructure",
+                priority: "Low",
+                emergency: false
+            },
+            locationDetails: {
+                streetAdress: "Address",
+                city: "City",
+                postalCode: "1000",
+                coordinates: {
+                    latitude: 0,
+                    longtitude: 0
+                },
+                locationDescription: "Near the main road"
+            },
+            contactInformation: {
+                contactMethod: "Email",
+                email: "test@test.com",
+                phone: "0000000000"
+            },
+            additionalDetails: {
+                filePath: "./somepath",
+                termsAndConditions: true
+            }
+        };
+
+        return { ...defaults, ...overrides };
+    }
+}
